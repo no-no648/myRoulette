@@ -1,0 +1,12 @@
+.baseArea {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 97vh;
+  }
+.rouletteArea{
+    width: 80%;
+}
+.inputArea{
+    width: 20%;
+}
