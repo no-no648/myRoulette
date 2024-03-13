@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8" />
+	<title>簡易抽選ツール</title>
+    <link href="style/style.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/roulette.js"></script>
+    <script src="js/scrupt.js"></script>
+</head>
+
+<body>
+    <div class="baseArea">
+        <div  class="rouletteArea">
+            <p id="result"></p>
+            <div class="roulette" style="display:none;">
+            </div>
+        </div>
+        <div class="inputArea">      
+            <textarea id = "inputText" cols="60" rows="30" onkeyup="myRoulette.keyup()" onchange = "myRoulette.onChange()"></textarea><br>
+            <input type="button" id = "startButton" onclick="myRoulette.pushStart()" value="スタート">
+            <input type="button" id = "stopButton" onclick="myRoulette.pushStop()" value="ストップ" disabled = "true"><br>
+            <input type="button" id = "sortButton" onclick="myRoulette.pushSort()" value="ソート">
+            <input type="button" id = "shuffleButton" onclick="myRoulette.pushShuffle()" value="シャッフル">
+            <input type="button" id = "removeButton" onclick="myRoulette.pushRemove()" value="重複削除">
+        </div>
+    </div>
+</body>
+
+</html>
